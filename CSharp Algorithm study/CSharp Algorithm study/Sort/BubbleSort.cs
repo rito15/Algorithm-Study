@@ -11,6 +11,7 @@ namespace CSharp_Algorithm_study.Sort
 
     // 시간복잡도 : O(n^2)
     // 공간복잡도 : O(n)
+    // 안정 정렬(Stable Sort) : 같은 키값을 가진 원소의 순서가 정렬 후에도 유지
 
     // Asc 기준
     // i = 1 ~ (length - 1)
@@ -30,7 +31,6 @@ namespace CSharp_Algorithm_study.Sort
                         Swap(ref arr[j], ref arr[j + 1]);
 
                         VisualizeArray(arr);
-                        Console.ReadKey();
                     }
                 }
             }

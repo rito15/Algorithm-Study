@@ -11,13 +11,23 @@ namespace CSharp_Algorithm_study.Sort
     /// </summary>
     public abstract class SortBase
     {
+        /// <summary> 콘솔 출력 옵션 </summary>
+        [Flags]
+        public enum ConsoleOption
+        {
+            /// <summary> 콘솔 일시 정지(키보드 입력 대기) </summary>
+            Pause = 1,
+            /// <summary> 콘솔 내용 지우기 </summary>
+            Refresh = 2,
+        }
+
         /// <summary> 정렬 수행 </summary>
         public abstract void Sort(int[] arr);
 
         /// <summary> 배열을 콘솔에 시각화하여 출력 </summary>
-        public void VisualizeArray(int[] arr, bool refreshConsole = true)
+        public void VisualizeArray(int[] arr, ConsoleOption consoleOption = ConsoleOption.Pause | ConsoleOption.Refresh)
         {
-            if (refreshConsole)
+            if (consoleOption.HasFlag(ConsoleOption.Refresh))
                 Console.Clear();
 
             // 전체 스트링
@@ -37,13 +47,20 @@ namespace CSharp_Algorithm_study.Sort
             }
 
             Console.WriteLine(sbFull);
+
+            // 콘솔 입력 대기
+            if (consoleOption.HasFlag(ConsoleOption.Pause))
+                Console.ReadKey();
         }
 
         public void Swap(ref int a, ref int b)
         {
-            a = a + b;
-            b = a - b;
-            a = a - b;
+            //a = a + b;
+            //b = a - b;
+            //a = a - b;
+            int tmp = a;
+            a = b;
+            b = tmp;
         }
     }
 }
