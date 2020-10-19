@@ -13,7 +13,8 @@ namespace CSharp_Algorithm_study
         public static void Main()
         {
             //new BubbleSort().Sort(new int[] { 10, 2, 7, 8, 6, 7, 2, 0, 1, 3 });
-            new SelectionSort().Sort(new int[] { 10, 2, 7, 8, 6, 7, 2, 0, 1, 3 });
+            //new SelectionSort().Sort(new int[] { 10, 2, 7, 8, 6, 7, 2, 0, 1, 3 });
+            new InsertionSort().Sort(new int[] { 10, 2, 7, 8, 6, 7, 2, 0, 1, 3 });
         }
     }
 }
