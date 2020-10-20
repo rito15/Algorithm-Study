@@ -9,7 +9,7 @@ namespace CSharp_Algorithm_study.Sort
     // 2020. 10. 15. 선택 정렬
     // https://gyoogle.dev/blog/algorithm/Selection%20Sort.html
 
-    // 시간복잡도 : O(n^2)
+    // 시간복잡도 : O(n^2) [최선, 평균, 최악]
     // 공간복잡도 : O(n)
     // 불안정 정렬(Unstable Sort) : 같은 키값을 가진 원소의 순서가 정렬 후에 유지되지 않음
 

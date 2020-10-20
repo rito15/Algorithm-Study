@@ -9,7 +9,8 @@ namespace CSharp_Algorithm_study.Sort
     // 2020. 10. 19. 삽입 정렬
     // https://gyoogle.dev/blog/algorithm/Insertion%20Sort.html
 
-    // 시간복잡도 : O(n^2)
+    //              [최악]   [평균]   [최선]
+    // 시간복잡도 : O(n^2) ~ O(n^2) ~ O(n)
     // 공간복잡도 : O(n)
     // 안정 정렬(Stable Sort) : 같은 키값을 가진 원소의 순서가 정렬 후에도 유지
 
