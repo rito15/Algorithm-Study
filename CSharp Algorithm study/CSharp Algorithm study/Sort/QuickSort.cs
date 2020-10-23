@@ -14,7 +14,7 @@ namespace CSharp_Algorithm_study.Sort
     // 공간복잡도 : O(n)
     // 불안정 정렬(Unstable Sort) : 같은 키값을 가진 원소의 순서가 정렬 후에 보장되지 않음
 
-    // 분할 - 정복 방식
+    // 분할-정복 방식 : 피벗을 이용해 정렬(Partition) -> 영역을 쪼갬(QuickSort)
     // ** 평균적으로 가장 빠른 정렬 알고리즘 **
     // 최악의 시간복잡도 : Partition()에서 피벗 인덱스가 최소 또는 최댓값일 때
     public class QuickSort : SortBase

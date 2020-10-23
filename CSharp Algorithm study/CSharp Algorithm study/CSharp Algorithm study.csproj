@@ -40,6 +40,7 @@
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Sort\Base\SortBase.cs" />
     <Compile Include="Sort\InsertionSort.cs" />
+    <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="Sort\QuickSort.cs" />
     <Compile Include="Sort\SelectionSort.cs" />
   </ItemGroup>
