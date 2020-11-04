@@ -18,7 +18,8 @@ namespace CSharp_Algorithm_study
             //new SelectionSort().Sort(arr);
             //new InsertionSort().Sort(arr);
             //new QuickSort().    Sort(arr);
-            new MergeSort().      Sort(arr);
+            //new MergeSort().    Sort(arr);
+            new HeapSort().      Sort(arr);
         }
     }
 }

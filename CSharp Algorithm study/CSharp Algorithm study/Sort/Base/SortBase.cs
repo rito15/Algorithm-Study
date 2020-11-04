@@ -53,6 +53,15 @@ namespace CSharp_Algorithm_study.Sort
                 Console.ReadKey();
         }
 
+        // 인덱스 기반 스왑
+        public void Swap(int[] arr, int indexA, int indexB)
+        {
+            int tmp = arr[indexA];
+            arr[indexA] = arr[indexB];
+            arr[indexB] = tmp;
+        }
+
+        // 요소를 직접 스왑
         public void Swap(ref int a, ref int b)
         {
             //a = a + b;
