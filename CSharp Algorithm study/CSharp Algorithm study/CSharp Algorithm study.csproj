@@ -39,10 +39,12 @@
     <Compile Include="MainClass.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Sort\Base\SortBase.cs" />
+    <Compile Include="Sort\CountingSort.cs" />
     <Compile Include="Sort\HeapSort.cs" />
     <Compile Include="Sort\InsertionSort.cs" />
     <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="Sort\QuickSort.cs" />
+    <Compile Include="Sort\RadixSort.cs" />
     <Compile Include="Sort\SelectionSort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
