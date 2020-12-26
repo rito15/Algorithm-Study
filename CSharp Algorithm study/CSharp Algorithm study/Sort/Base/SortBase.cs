@@ -53,6 +53,19 @@ namespace CSharp_Algorithm_study.Sort
                 Console.ReadKey();
         }
 
+        public void ShowArrayValues(int[] arr)
+        {
+            StringBuilder sb = new StringBuilder("Array : { ");
+
+            foreach (var val in arr)
+            {
+                sb.Append($"{val} ");
+            }
+            sb.Append("} ");
+
+            Console.WriteLine(sb);
+        }
+
         // 인덱스 기반 스왑
         public void Swap(int[] arr, int indexA, int indexB)
         {
