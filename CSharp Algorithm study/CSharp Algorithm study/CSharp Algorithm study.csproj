@@ -36,9 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BresenhamAlgorithm.cs" />
     <Compile Include="MainClass.cs" />
-    <Compile Include="Pattern\BuilderPattern.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Sort\Base\SortBase.cs" />
     <Compile Include="Sort\CountingSort.cs" />

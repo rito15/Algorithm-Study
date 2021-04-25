@@ -16,7 +16,7 @@ namespace CSharp_Algorithm_study.Sort
 
     // 분할-정복 방식 : 피벗을 이용해 정렬(Partition) -> 영역을 쪼갬(QuickSort)
     // ** 평균적으로 가장 빠른 정렬 알고리즘 **
-    // 최악의 시간복잡도 : Partition()에서 피벗이 최소 또는 최댓값일 때
+    // 최악의 시간복잡도 : Partition()에서 피벗 인덱스가 최소 또는 최댓값일 때
     public class QuickSort : SortBase
     {
         public override void Sort(int[] arr)
@@ -66,6 +66,10 @@ namespace CSharp_Algorithm_study.Sort
             // left      <= L ,
             // arr[left] >  arr[L] 이므로 서로를 교환
             Swap(ref arr[L], ref arr[left]);
+
+            // 이 때, arr[left] == pivot임
+            // arr[left] = arr[L];
+            // arr[L] = pivot;
 
             VisualizeArray(arr);
 
