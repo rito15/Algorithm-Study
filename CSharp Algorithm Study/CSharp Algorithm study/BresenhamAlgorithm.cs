@@ -183,7 +183,7 @@ namespace CSharp_Algorithm_study
             }
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
+        public IEnumerator GetEnumerator()
         {
             return points.GetEnumerator();
         }
